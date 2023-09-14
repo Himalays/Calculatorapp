@@ -22,14 +22,14 @@ def calculator():
         print(symbol)
     continue_cal = True
     while continue_cal:
-        op_symbol =input("Pick a symbol")
+        op_symbol =input("Pick a symbol - ")
         calcualtion_fun = operations[op_symbol]
         answer = calcualtion_fun(num1,num2)
         print(f"{num1}{op_symbol}{num2} = {answer}")
-    if input(f"Type 'y' to continue calculating with a new number, else type 'n'") == 'y':
-        continue_cal = True
-    else:
-        continue_cal = False
+        if input(f"Type 'y' to continue calculating with a new number, else type 'n' - ") == 'y':
+            continue_cal = True
+        else:
+            continue_cal = False
 
 calculator()
 
